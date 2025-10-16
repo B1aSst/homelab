@@ -11,6 +11,8 @@ Some popular commercial solution that use WireGuard are [Mullvad](https://mullva
 
 **A silent protocol :** When a WireGuard interface is exposed to the internet, it will not respond to anyone until a valid public key if presented. It means it's invisible to illegitimate peers and network scanners. Of course, that doesn't mean that it can't be breached but more like it will not be the main service targeted because of it's silent behavior.
 
+![megamind meme](memes/megamind.jpg)
+
 **Forward Secrecy :** WireGuard supports periodic re-keying, where new session keys are generated at regular intervals. This limits the amount of data that can be decrypted if a key is compromised.
 
 **Post quantum consideration :** While WireGuard does not support post quantum cryptography, an extra layer of security can still be added by using a 256-bit Preshared Key. This way even if [Curve25519](https://en.wikipedia.org/wiki/Curve25519) used for key exchange is breached in the future, the Preshared Key used will also need to be compromised to decrypt the traffic.
@@ -175,13 +177,14 @@ AllowedIPs = 10.11.0.10/16
 
 We can see in this configuration that the peer "AllowedIPs" parameter is set to the subnet of the remote-site, this way all clients in the remote site will be able to access the private network.
 
-The best command to use is wg-quick, it let you start/ stop the WG service for the configuration file.
+The best command to use is wg-quick, it let you start / stop the WG service for the configuration file.
 
+To start the service on based on the configuration file :
 ```sh
 wg-quick start <int>
 ```
 
-To start the service at startup:
+To start the service at startup :
 ```sh
 systemctl enable wg-quick@<int>
 ```
