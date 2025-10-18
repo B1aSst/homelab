@@ -1,12 +1,5 @@
 # Homelab
 
-<!--toc:start-->
-- [Homelab](#homelab)
-  - [Hardware](#hardware)
-  - [Diagrams](#diagrams)
-  - [Roadmap](#roadmap)
-<!--toc:end-->
-
 **Homelab**
 : *A server set up in one's home for the purpose of testing various configurations of hardware, operating systems, etc.*
 
