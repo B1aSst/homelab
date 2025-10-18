@@ -36,7 +36,7 @@ There is power cut sometimes so the UPS makes my lab not go down.
 
 ## Diagrams
 
-You will find my how to diagram [here](/diagrams/diagram.md).
+D2 guide [here](/diagrams/diagram.md).
 
 Here is my physical setup :
 ![physical diagram](diagrams/svg/network.svg)
