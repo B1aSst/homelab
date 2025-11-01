@@ -1,5 +1,11 @@
 # Diagram
 
+Dependings on the context, I use different tools to make diagrams :
+- D2 for clean diagram
+- Draw.io or Visio to create fast diagram in GUI
+
+## D2
+
 I use [D2](https://d2lang.com/) to create diagrams. It's clean and easy to use.
 
 To try it out online: [Playground](https://play.d2lang.com/)
