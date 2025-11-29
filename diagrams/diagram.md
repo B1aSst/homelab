@@ -14,6 +14,10 @@ To try it out online: [Playground](https://play.d2lang.com/)
 
 [Install D2](https://d2lang.com/tour/install/)
 
+```sh
+
+```
+
 ### Commands
 
 To compile on save and serve the output on a local HTTP port:
