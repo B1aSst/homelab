@@ -1,0 +1,122 @@
+vars: {
+  d2-config: {
+    layout-engine: elk
+    # Terminal theme code
+    theme-id: 300
+  }
+}
+
+direction: right
+
+title: |md
+  # Homelab physical diagram
+| {
+  near: top-center
+}
+
+Homelab Network: {
+  style.stroke: green
+  Fortigate 60E: {
+    shape: rectangle
+    icon: https://cdn.jsdelivr.net/npm/@loganmarchione/homelab-svg-assets@latest/assets/fortinet.svg
+    style: {
+      animated: true
+      stroke: red
+    }
+  }
+
+  Cisco SG300: {
+    shape: rectangle
+    icon: https://icons.terrastruct.com/essentials%2F031-shuffle.svg
+    style: {
+      animated: true
+      stroke: darkturquoise
+    }
+  }
+
+  Proxmox node: {
+    shape: square
+    icon: https://cdn.jsdelivr.net/npm/@loganmarchione/homelab-svg-assets@latest/assets/proxmox.svg
+    style: {
+      animated: true
+      stroke: orange
+    }
+  }
+
+  UAP-nanoHD: {
+    shape: circle
+    style: {
+      double-border: true
+      animated: true
+      stroke: deepskyblue
+    }
+  }
+
+  Synology DS223: {
+    shape: image
+    icon: https://icons.terrastruct.com/essentials%2F117-database.svg
+    style: {
+      animated: true
+    }
+  }
+
+  Fortigate 60E -- Cisco SG300: LAG trunk {
+    style: {
+      animated: true
+      stroke: blue
+    }
+  }
+  Fortigate 60E -- Cisco SG300: LAG trunk {
+    style: {
+      animated: true
+      stroke: blue
+    }
+  }
+  Fortigate 60E -- Proxmox node: DMZ trunk {
+    style: {
+      animated: true
+      stroke: red
+    }
+  }
+
+  Cisco SG300 -- Proxmox node: LAG trunk {
+    style: {
+      animated: true
+      stroke: blue
+    }
+  }
+  Cisco SG300 -- Proxmox node: LAG trunk {
+    style: {
+      animated: true
+      stroke: blue
+    }
+  }
+  Cisco SG300 -- Synology DS223: MGMT VLAN {
+    style: {
+      animated: true
+      stroke: violet
+    }
+  }
+  Cisco SG300 -- UAP-nanoHD: trunk {
+    style: {
+      animated: true
+      stroke: blue
+    }
+  }
+}
+
+Internet: {
+  shape: image
+  icon: https://icons.terrastruct.com/essentials%2F140-internet.svg
+}
+
+ISP router: {
+  shape: image
+  icon: https://icons.terrastruct.com/tech%2Frouter.svg
+  style: {
+    animated: true
+  }
+}
+Internet -- ISP router: 500Mb/s Fiber {style.animated: true}
+ISP router -- Homelab Network.Fortigate 60E: Redundant WAN link {style.animated: true}
+ISP router -- Homelab Network.Fortigate 60E: Redundant WAN link {style.animated: true}

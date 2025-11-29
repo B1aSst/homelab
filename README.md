@@ -29,7 +29,7 @@ There is power cut sometimes so the UPS help my lab staying awake.
 ## Diagrams
 
 Here is my physical setup:
-![physical diagram](diagrams/svg/network.svg)
+![physical diagram](diagrams/images/network.svg)
 
 D2 guide [here](/diagrams/diagram.md)
 
