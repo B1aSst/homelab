@@ -35,10 +35,6 @@ D2 guide [here](/diagrams/diagram.md)
 
 ## Services
 
-### Network
-
-To-do...
-
 ## Roadmap
 
 - [ ] Change Fortigate by OPNsense
