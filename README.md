@@ -38,5 +38,5 @@ D2 guide [here](/diagrams/diagram.md)
 ## Roadmap
 
 - [ ] Change Fortigate by OPNsense
-- [ ] PVE Cluster
+- [ ] PVE 3 node Cluster
 - [ ] Multi sites topology
