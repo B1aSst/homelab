@@ -14,6 +14,8 @@ To try it out online: [Playground](https://play.d2lang.com/)
 
 [Install D2](https://d2lang.com/tour/install/)
 
+### Commands
+
 To compile on save and serve the output on a local HTTP port:
 ```sh
 d2 --watch my-diagram.d2
