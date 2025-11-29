@@ -12,7 +12,7 @@ I tried to buy hardware with a minimalist approach, I don't wanted things too no
 
 ## Hardware
 
-*On my main site, I have:*
+*On my main site:*
 - Firewall : Fortigate 60E
 - Switch L2 : Cisco SG300-10
 - NAS : Synology DS223(Switch L2)
