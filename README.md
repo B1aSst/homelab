@@ -24,7 +24,7 @@ It started with the Synology NAS, today I think it was a mistake but I had to st
 
 I got the fortigate, switch, and AP from second-hand. No need to buy them full price as I'm not a company... The fortigate is a great appliance and nice to have because I use them at work and so I'ts nice to practice. I'ts mainly to filter traffic between VLANs. The AP is use to diffuse VLAN in the house. The NAB5 mini pc because I simply wanted something powerfull, small and not too noisy. It has a great CPU and 32GB of RAM, it run Proxmox VE with several VM/LXC for all my services.
 
-There is power cut sometimes so the UPS makes my lab not go down.
+There is power cut sometimes so the UPS help my lab staying awake.
 
 ## Diagrams
 
