@@ -39,5 +39,4 @@ D2 guide [here](/diagrams/diagram.md)
 
 - [ ] Change Fortigate by OPNsense
 - [ ] PVE Cluster
-- [ ] Automate VM/LXC creation
 - [ ] Multi sites topology
