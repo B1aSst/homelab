@@ -13,7 +13,7 @@ I tried to buy hardware with a minimalist approach, I don't wanted things too no
 ## Hardware
 
 *On my main site:*
-- Firewall : Fortigate 60E
+- Firewall : Protectcli Vault Pro VP2430 with OPNsense
 - Switch L2 : Cisco SG300-10
 - NAS : Synology DS223(Switch L2)
 - Proxmox node : Minisforum NAB5
@@ -24,7 +24,9 @@ It started with the Synology NAS, today I think it was a mistake but I had to st
 
 I got the fortigate, switch, and AP from second-hand. No need to buy them full price as I'm not a company... The fortigate is a great appliance and nice to have because I use them at work and so I'ts nice to practice. I'ts mainly to filter traffic between VLANs. The AP is use to diffuse VLAN in the house. The NAB5 mini pc because I simply wanted something powerfull, small and not too noisy. It has a great CPU and 32GB of RAM, it run Proxmox VE with several VM/LXC for all my services.
 
-There is power cut sometimes so the UPS help my lab staying awake.
+There is power cut sometimes so the UPS help my lab to stay awake.
+
+For now, only the firewall and proxmox node have 2.5g NIC but I plan to change the switch and the NAS in the future.
 
 ## Diagrams
 
@@ -34,9 +36,3 @@ Here is my physical setup:
 D2 guide [here](/diagrams/diagram.md)
 
 ## Services
-
-## Roadmap
-
-- [ ] Change Fortigate by OPNsense
-- [ ] PVE 3 node Cluster
-- [ ] Multi sites topology

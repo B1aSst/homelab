@@ -16,9 +16,9 @@ title: |md
 
 Homelab Network: {
   style.stroke: green
-  Fortigate 60E: {
+  OPNsense: {
     shape: rectangle
-    icon: https://cdn.jsdelivr.net/npm/@loganmarchione/homelab-svg-assets@latest/assets/fortinet.svg
+    icon: https://cdn.jsdelivr.net/npm/@loganmarchione/homelab-svg-assets@latest/assets/opnsense.svg
     style: {
       animated: true
       stroke: red
@@ -60,22 +60,16 @@ Homelab Network: {
     }
   }
 
-  Fortigate 60E -- Cisco SG300: LAG trunk {
+  OPNsense -- Cisco SG300: LAG trunk {
     style: {
       animated: true
       stroke: blue
     }
   }
-  Fortigate 60E -- Cisco SG300: LAG trunk {
+  OPNsense -- Cisco SG300: LAG trunk {
     style: {
       animated: true
       stroke: blue
-    }
-  }
-  Fortigate 60E -- Proxmox node: DMZ trunk {
-    style: {
-      animated: true
-      stroke: red
     }
   }
 
@@ -118,5 +112,4 @@ ISP router: {
   }
 }
 Internet -- ISP router: 500Mb/s Fiber {style.animated: true}
-ISP router -- Homelab Network.Fortigate 60E: Redundant WAN link {style.animated: true}
-ISP router -- Homelab Network.Fortigate 60E: Redundant WAN link {style.animated: true}
+ISP router -- Homelab Network.OPNsense: WAN link {style.animated: true}
